@@ -1,0 +1,328 @@
+body {
+  background-color: #fff;
+  font-weight: 400;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000;
+  padding: 92px 47px 85px;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 30px;
+  text-transform: lowercase;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.header__links-list-item {
+  list-style: circle;
+  line-height: normal;
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link_active {
+  text-decoration: none;
+}
+
+.header__logo {
+  display: block;
+  width: 148px;
+  margin-top: 10px;
+  margin-right: 155px;
+}
+
+.header__logo-image {
+  width: 100%;
+}
+
+.address {
+  font-size: 18px;
+  line-height: 1.35;
+  font-style: normal;
+  text-underline-position: under;
+}
+
+.cover {
+  position: relative;
+  height: 760px;
+  padding: 165px 50px 50px 50px;
+  background-image: url("/ono-tebe-nado/images/cover.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+}
+
+.cover__title {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #fff;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-transform: uppercase;
+  letter-spacing: 24px;
+  margin-bottom: 147px;
+}
+
+.aligned-text {
+  display: block;
+}
+.aligned-text_center {
+  text-align: center;
+  line-height: 1;
+}
+
+.aligned-text_right {
+  text-align: right;
+  line-height: 1;
+}
+
+.letter-spacing-extended {
+  margin-left: 50px;
+}
+
+.letter-spacing-extended-extra {
+  margin-left: 24px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+  margin-right: 12px;
+}
+
+.cover__description {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  gap: 78px;
+}
+
+.cover__description-text {
+  display: block;
+  color: #fff;
+  font-size: 22px;
+  line-height: 1.27;
+  text-transform: uppercase;
+  word-spacing: 20px;
+}
+
+.bet-button {
+  display: block;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.lots {
+  margin: 174px 24px 186px;
+}
+
+.lots__heading {
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+  margin-left: 40px;
+}
+
+.lots__cards-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 25px;
+  list-style: none;
+  margin-bottom: 33px;
+}
+
+.lots__card-list-item {
+  min-width: 330px;
+  min-height: 560px;
+  flex: 1 1 auto;
+}
+
+.card-link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: auto;
+  height: 100%;
+  padding: 48px 40px 40px;
+  color: #fff;
+}
+
+.card_type_film {
+  background-image: url("../images/card-lot-01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card_type_book {
+  background-image: url("../images/card-lot-02.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card_type_picture {
+  background-image: url("../images/card-lot-03.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card__title {
+  position: relative;
+  z-index: 1;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.card__text {
+  position: relative;
+  z-index: 1;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.lots__look-more-link {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  line-height: normal;
+  text-transform: lowercase;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-underline-offset: 0.2em;
+  margin-left: 30px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 25px;
+  width: 1052px;
+  margin: 0 auto;
+}
+
+.about__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.about__logo-margin-left {
+  margin-left: 41px;
+}
+
+.about__column {
+  justify-self: center;
+  min-width: 330px;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+.about__title {
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 1.2;
+  gap: 26px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 165px 50px 91px;
+}
+
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+  text-transform: lowercase;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.35;
+}
+
+.footer__menu-list {
+  text-align: center;
+  list-style: none;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-icon {
+  width: auto;
+  height: 48px;
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 48px;
+  list-style: none;
+}
