@@ -14,9 +14,6 @@ body {
 .header__links-list {
   display: flex;
   gap: 30px;
-  text-transform: lowercase;
-  text-decoration: underline;
-  text-underline-position: under;
 }
 
 .header__links-list-item {
@@ -24,6 +21,12 @@ body {
   line-height: normal;
   font-size: 18px;
   margin-left: 5px;
+  text-transform: lowercase;
+}
+
+.header__link {
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
 .header__links-list-item_no-bullit {
@@ -50,13 +53,14 @@ body {
   line-height: 1.35;
   font-style: normal;
   text-underline-position: under;
+  margin-top: 12px;
 }
 
 .cover {
   position: relative;
-  height: 760px;
+  min-height: 760px;
   padding: 165px 50px 50px 50px;
-  background-image: url("/ono-tebe-nado/images/cover.jpg");
+  background-image: url("../images/cover.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -82,8 +86,8 @@ body {
   font-weight: 700;
   line-height: 1.17;
   text-transform: uppercase;
-  letter-spacing: 24px;
-  margin-bottom: 147px;
+  letter-spacing: 27px;
+  margin-bottom: 135px;
 }
 
 .aligned-text {
@@ -100,16 +104,15 @@ body {
 }
 
 .letter-spacing-extended {
-  margin-left: 50px;
+  margin-left: 36px;
 }
 
 .letter-spacing-extended-extra {
-  margin-left: 24px;
+  letter-spacing: 47px;
 }
 
 .no-letter-spacing {
   letter-spacing: 0;
-  margin-right: 12px;
 }
 
 .cover__description {
@@ -128,16 +131,21 @@ body {
   line-height: 1.27;
   text-transform: uppercase;
   word-spacing: 20px;
+  padding: 10px;
 }
 
 .bet-button {
   display: block;
+  text-align: center;
   color: #fff;
   font-size: 22px;
   font-weight: 500;
   text-transform: uppercase;
   background-color: transparent;
   border: 1px solid #fff;
+  width: 256px;
+  height: 51px;
+  cursor: pointer;
 }
 
 .lots {
@@ -183,27 +191,21 @@ body {
   height: 100%;
   padding: 48px 40px 40px;
   color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .card_type_film {
   background-image: url("../images/card-lot-01.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .card_type_book {
   background-image: url("../images/card-lot-02.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .card_type_picture {
   background-image: url("../images/card-lot-03.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .card__title {
@@ -242,7 +244,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr;
   column-gap: 25px;
-  width: 1052px;
+  min-width: 1052px;
   margin: 0 auto;
 }
 
@@ -257,7 +259,7 @@ body {
 }
 
 .about__logo-margin-left {
-  margin-left: 41px;
+  margin-left: 56px;
 }
 
 .about__column {
@@ -277,7 +279,7 @@ body {
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
-  margin-bottom: 100px;
+  margin-bottom: 73px;
   margin-top: 100px;
 }
 
@@ -289,19 +291,20 @@ body {
   font-style: normal;
   line-height: 1.2;
   gap: 26px;
+  padding: 24px;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 165px 50px 91px;
+  padding: 140px 50px 91px;
 }
 
 .footer__menu {
   display: flex;
   flex-direction: column;
-  text-transform: lowercase;
+  
   font-size: 18px;
   font-style: normal;
   line-height: 1.35;
@@ -310,6 +313,13 @@ body {
 .footer__menu-list {
   text-align: center;
   list-style: none;
+  text-transform: lowercase;
+ 
+}
+
+.footer__menu-link {
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
 }
 
 .footer__menu-link_active {
@@ -317,7 +327,7 @@ body {
 }
 
 .footer__social-icon {
-  width: auto;
+  width: 100%;
   height: 48px;
 }
 
