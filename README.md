@@ -1,2 +1,2 @@
-https://github.com/OlgaGulyakevich/ono-tebe-nado
-Verstka - first project
+🎨 Лендинг аукциона "Оно тебе надо" — учебный проект HTML/CSS верстки
+
